@@ -1,6 +1,6 @@
 # 1D Signal Labeling App
 
-A Flutter application designed to load, visualize, and label 1D sequential data to generate ground-truth segmentation masks for training 1D Convolutional Neural Networks (CNNs).
+A multi-platform Flutter application designed to load, visualize, and label 1D sequential data to generate ground-truth segmentation masks for training 1D Convolutional Neural Networks (CNNs).
 
 ## Screenshot
 <img src="docs/images/demo1.jpg" alt="drawing" height="300"/>
@@ -77,6 +77,12 @@ lib/
     ```bash
     flutter run
     ```
+### Mobile Deployment
+* For Android, ensure you have an emulator or physical device connected.
+* For iOS, open the project in Xcode and configure signing before running on a simulator or physical device.
+### Desktop Deployment
+* For Linux Desktop, ensure you have the necessary [build tools](https://docs.flutter.dev/platform-integration/linux/setup#:~:text=Configure%20your%20development%20environment%20to,$%20flutter%20doctor%20%2Dv%20content_copy) installed and run `flutter run -d linux`.
+    * **note:** you might have to instsll **lld**: `sudo apt-get install lld`
 
 ## Configuration
 ### Customizing Label Classes
